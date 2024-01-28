@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Weather API
+  version: 1.0.0
+  description: A simple API to fetch weather information for a specific city
+servers:
+  - url: http://localhost:3000/api
+    description: Local server
+paths:
+  /weather/{city}:
+    get:
+      summary: Get weather data for a city
+      description: Fetches weather data for the specified city.
+      parameters:
+        - in: path
+          name: city
+          required: true
+          schema:
+            type: string
+          description: City for which to fetch the weather
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  temperature:
+                    type: number
+                    description: Current temperature.
+                    example: 20
+                  humidity:
+                    type: number
+                    description: Current humidity.
+                  wind:
+                    type: number
+                    description: Current wind.
+                  rain:
+                    type: number
+                    description: Current rain.
+        '404':
+          description: City not found
+        '500':
+          description: Server error
