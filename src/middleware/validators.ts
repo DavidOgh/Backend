@@ -17,3 +17,24 @@ export const validateCityName = param("city")
   .isIn(["london", "dublin"])
   // We will use the withMessage method to set a custom error message
   .withMessage("City name must be either london or dublin");
+
+
+
+
+/**
+ * Validates the property name param
+ * @returns {ValidationChain} - Express validator validation chain
+ * @example
+ * router.get(
+ *  "/:property",
+ * validatepropertyName,
+ * getpropertyData
+ * );
+ */
+export const validatepropertyName = param("property")
+  // We will use the isString method to check if the property param is a string
+  .isString()
+  // We will use the isIn method to check if the property param is either bungalow,cottage,terraced or flat
+  .isIn(["bungalow", "cottage", "terraced","flat"])
+  // We will use the withMessage method to set a custom error message
+  .withMessage("property name must be either bungalow, cottage, terraced or flat");
