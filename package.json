@@ -1,13 +1,12 @@
 {
   "name": "weather_api",
   "version": "1.0.0",
-  "description": "The Weather API",
+  "description": "Davids Weather API",
   "type": "module",
   "engines": {
     "node": ">= 18.12 <21"
   },
-  "license": "MIT",
-  "author": "Lucian Duta",
+  "main": "index.js",
   "scripts": {
     "start": "node dist/src/server.js",
     "dev": "nodemon dist/src/server.js",
@@ -16,18 +15,23 @@
     "dev:start": "nodemon dist/src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "David Oghre",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1"
+  },
   "devDependencies": {
-    "@faker-js/faker": "^8.4.0",
-    "@types/node": "^20.11.10",
-    "nodemon": "^3.0.3",
+    "@types/node": "^20.12.7",
+    "eslint": "^9.1.1",
+    "nodemon": "^3.1.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^8.4.0",
-    "express": "^4.18.2",
-    "express-validator": "^7.0.1"
+    "typescript": "^5.4.5"
   }
 }
