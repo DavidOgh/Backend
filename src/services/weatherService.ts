@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import { faker } from '@faker-js/faker';
 
 export const generateLondonWeatherData = (): WeatherData => {
   // Generate random weather data
@@ -24,4 +24,15 @@ export const generateDublinWeatherData = (): WeatherData => {
 
   // Return weather data
   return generatedWeatherData;
+};
+export const generateLondonWeatherDayData = (): WeatherDayData => {
+  // Generate random weather data
+  const generatedWeatherDayData ={
+    dayOne: 14,
+    dayTwo: 23,
+    dayThree: 17,
+  };
+ 
+  // Return weather data
+  return generatedWeatherDayData;
 };
