@@ -1,27 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "node16",
-    "lib": ["ES2022"],
-    "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node16",
-    "rootDir": ".",
-    "outDir": "dist",
-    "allowSyntheticDefaultImports": true,
-    "importHelpers": true,
-    "alwaysStrict": true,
-    "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": false,
-    "skipLibCheck": true,
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "target": "es2022", // Specifies the target ECMAScript version for the output JavaScript files. Here, it targets ES2022.
+    "module": "node16", // Sets the module system, in this case, for Node.js version 16 which supports ES Modules natively.
+    "lib": ["ES2022"], // Specifies a list of library files to be included in the compilation. Here it includes standard library files for ES2022.
+    "strict": true, // Enables all strict type-checking options.
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules, allowing us to use CommonJS modules in ES Modules syntax.
+    "moduleResolution": "node16", // Uses Node.js's module resolution algorithm, considering the Node.js version 16 specifics.
+    "rootDir": ".", // Specifies the root directory of input files. Here, the current directory is set as the root.
+    "outDir": "dist", // Redirects output structure to the directory. Here, compiled files will be placed in the "dist" directory.
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export. This does not affect code emit, just type checking.
+    "importHelpers": true, // Imports helper functions from the 'tslib' package instead of including them in every file, reducing redundancy.
+    "alwaysStrict": true, // Parses in strict mode and emits "use strict" for each source file, enforcing stricter semantics and producing more secure JavaScript.
+    "sourceMap": true, // Generates corresponding '.map' file. Source maps allow debuggers and other tools to map the compiled JavaScript back to the original TypeScript source files.
+    "forceConsistentCasingInFileNames": true, // Ensures that the case of references to filenames matches the actual case on disk, preventing issues on case-sensitive file systems.
+    "noFallthroughCasesInSwitch": true, // Reports an error if a switch case falls through to the next case without a break statement.
+    "noImplicitReturns": true, // Ensures that all functions return a value where the return type isn't void or any.
+    "noUnusedLocals": true, // Reports errors on local variables that are declared but never used within their containing function.
+    "noUnusedParameters": true, // Raises errors on function parameters that are never used.
+    "noImplicitAny": false, // When false, allows expressions and declarations with an implied 'any' type.
+    "noImplicitThis": false, // When false, allows 'this' expressions with an implied 'any' type.
+    "strictNullChecks": false, // When false, variables can be null or undefined without explicit checking.
+    "skipLibCheck": true, // Skips type checking of declaration files (*.d.ts).
+    "typeRoots": ["./node_modules/@types", "./src/types"] // Specifies folders that contain type definitions. This is useful for custom type definitions.
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"] // Specifies a list of glob patterns that match files to be included in the compilation. Here, it includes all files in the "src" directory.
 }
