@@ -10,3 +10,8 @@ interface WeatherDayData {
   dayTwo: number;
   dayThree: number;
 }
+interface stormPath {
+  Path: string;
+  catigory: number;
+  direction: string; 
+}

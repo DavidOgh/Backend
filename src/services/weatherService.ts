@@ -34,7 +34,15 @@ export const generateLondonWeatherDayData = (): WeatherDayData => {
     dayTwo: 23,
     dayThree: 17,
   };
- 
   // Return weather data
   return generatedWeatherDayData;
+};
+export const generateDublinstormPath = (): stormPath => {
+  //generate random storm path
+  const generateDublinstormPath ={
+    Path: "75km",
+    catigory: 7,
+    direction: "North",
+  }; 
+  return generateDublinstormPath;
 };
