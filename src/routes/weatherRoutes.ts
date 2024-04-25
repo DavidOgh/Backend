@@ -10,4 +10,3 @@ router.get('/:city', validateCityName, getWeatherData, getWeatherDayData, getsto
 
 // We will export the router
 export default router;
-
