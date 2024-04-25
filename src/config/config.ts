@@ -12,6 +12,6 @@ export function getClient(): algosdk.Algodv2 {
 }
 
 export function getAccount(): algosdk.Account {
-    let account = algosdk.mnemonicToSecretKey("special armor duck uphold hollow reflect supreme high swallow crawl awkward man risk theme keep shrug luggage cart either announce trend remain across abandon sock");
+    let account = algosdk.mnemonicToSecretKey(mnemonic);
     return account; 
 }
