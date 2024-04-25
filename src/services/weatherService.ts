@@ -41,7 +41,7 @@ export const generateDublinstormPath = (): stormPath => {
   //generate random storm path
   const generateDublinstormPath ={
     city: "dublin",
-    Path: "75km",
+    Path: 75,
     catigory: 7,
     direction: "North",
   }; 

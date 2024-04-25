@@ -12,7 +12,7 @@ interface WeatherDayData {
 }
 interface stormPath {
   city: string;
-  Path: string;
+  Path: number;
   catigory: number;
   direction: string; 
 }
