@@ -40,6 +40,7 @@ export const generateLondonWeatherDayData = (): WeatherDayData => {
 export const generateDublinstormPath = (): stormPath => {
   //generate random storm path
   const generateDublinstormPath ={
+    city: "dublin",
     Path: "75km",
     catigory: 7,
     direction: "North",

@@ -11,6 +11,7 @@ interface WeatherDayData {
   dayThree: number;
 }
 interface stormPath {
+  city: string;
   Path: string;
   catigory: number;
   direction: string; 
