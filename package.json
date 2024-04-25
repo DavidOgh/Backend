@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
+    "algosdk": "^2.7.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-validator": "^7.0.1"
